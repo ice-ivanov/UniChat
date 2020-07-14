@@ -8,9 +8,7 @@ application = ProtocolTypeRouter({
     'websocket': AllowedHostsOriginValidator(
         AuthMiddlewareStack(
             URLRouter(
-                [
-                    path('admin/', admin.site.urls),
-                ]
+                []
             )
         )
     )
