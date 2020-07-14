@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+web: daphne UniChat.asgi:application --port $PORT --bind 0.0.0.0 -v2
